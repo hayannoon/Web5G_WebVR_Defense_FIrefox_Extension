@@ -1,0 +1,36 @@
+{
+  "description": "defense extension against  3D browser history attack via WebVR",
+  "manifest_version": 2,
+  "name": "WebVr_defense_extension",
+  "version": "1.0",
+  "icons": {
+    "48": "icons/webvr.png"
+  },
+
+  "permissions": [
+    "activeTab", "tabs"
+  ],
+
+  "browser_action": {
+    "default_icon": "icons/webvr.png",
+    "theme_icons": [{
+        "light": "icons/webvr.png",
+        "dark": "icons/webvr.png",
+        "size": 32
+    }],
+    "default_title": "WebVR_defense",
+    "default_popup": "popup/activate_vrmode.html"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.mozilla.org/*"],
+      "js": ["/content_scripts/hooking.js"]
+    }
+  ],
+
+  "background" : {
+    "scripts" : ["background_scripts/background.js"]
+  }
+
+}
