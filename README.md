@@ -14,5 +14,5 @@
 4. In the other tab or window (extension not enabled), the access to `VRDisplay.length` will function rightly.
 
 ### Defense Mechanism
-    The WebVR privacy attack method uses vulnerabilities in the Firefox browser. When the victim plays VR, the WebVR framework automatically saves the user's usage information, but the problem is that it responds even if an arbitrary attacker executes the WebVR API in another window.
-    Therefore, when this Firefox Add-ons is installed in the browser, it basically hooks the WebVR API and returns an arbitrary value when using the WebVR API. However, if the user sets a specific window as VRMode, API operation is allowed for that window so that it can be played normally.
+The WebVR privacy attack method uses vulnerabilities in the Firefox browser. When the victim plays VR, the WebVR framework automatically saves the user's usage information, but the problem is that it responds even if an arbitrary attacker executes the WebVR API in another window.
+Therefore, when this Firefox Add-ons is installed in the browser, it basically hooks the WebVR API and returns an arbitrary value when using the WebVR API. However, if the user sets a specific window as VRMode, API operation is allowed for that window so that it can be played normally.
