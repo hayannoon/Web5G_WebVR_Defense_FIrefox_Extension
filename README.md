@@ -1,4 +1,4 @@
-# Firefox browser extension (Ad-ons)
+# Firefox browser extension (Add-ons)
 ### How to apply Firefox extension
 1. Download `defense_extension` folder
 2. Open the firefox browser and search `about:debugging` in the address bar
